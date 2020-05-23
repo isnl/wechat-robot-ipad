@@ -1,0 +1,46 @@
+{
+  "name": "wechat-robot",
+  "version": "1.0.0",
+  "description": "一款nodejs版微信机器人，群聊小助手",
+  "author": "Peanut <htmlcs@163.com>",
+  "website": "https://iiter.cn",
+  "license": "MIT",
+  "keywords": [
+    "微信机器人",
+    "微信小助手",
+    "微信群聊机器人",
+    "微信小秘书",
+    "微信每日说",
+    "wechaty",
+    "微信助手"
+  ],
+  "main": "app.js",
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "is-pr": "^1.1.0",
+    "node-schedule": "^1.3.2",
+    "qrcode-terminal": "^0.12.0",
+    "request": "^2.88.0",
+    "superagent": "^4.1.0",
+    "wechaty": "^0.38.4",
+    "wechaty-puppet": "^0.24.0",
+    "wechaty-puppet-padplus": "^0.6.3"
+  },
+  "devDependencies": {
+    "@chatie/eslint-config": "^0.6.17",
+    "@chatie/git-scripts": "^0.2.5",
+    "@chatie/tsconfig": "^0.6.1",
+    "check-node-version": "^3.2.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
+}
